@@ -24,14 +24,14 @@ def take_command():
             command = listener.recognize_google(voice)
             command = command.lower()
             if 'mg' in command:
-                command = command.replace('akhil', '')
+                command = command.replace('mg', '')
                 print(command)
     except:
         pass
     return command
 
 
-def run_akhil():
+def run_mg():
     command = take_command()
     print(command)
     if 'play' in command:
@@ -57,4 +57,4 @@ def run_akhil():
 
 
 while True:
-    run_akhil()
+    run_mg()
